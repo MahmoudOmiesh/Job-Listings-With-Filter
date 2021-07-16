@@ -95,7 +95,7 @@ function filterItems(e) {
 	filterDiv.style.visibility = "visible";
 	const newFilterItem = document.createElement("div");
 	newFilterItem.className = "filter__item";
-	newFilterItem.innerHTML = `<p class="filter__text">${e.target.textContent}</p><img src="images/icon-remove.svg" class="filter__img"/>`;
+	newFilterItem.innerHTML = `<p class="filter__text">${e.target.textContent}</p><img src="images/icon-remove.svg" class="filter__img" alt="close"/>`;
 
 	const deleteBtn = newFilterItem.querySelector(".filter__img");
 	// add listener to close btn
