@@ -1,0 +1,47 @@
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-family: var(--ff-main);
+	font-size: 14px;
+	background: top / contain no-repeat url("../images/bg-header-desktop.svg")
+		var(--clr-primary-100);
+	padding-top: 10rem;
+	overflow-x: hidden;
+
+	@include mq(small) {
+		background-image: url("../images/bg-header-mobile.svg");
+	}
+}
+
+.main {
+	padding: 0em 5vw 2em 5vw;
+	background-color: var(--clr-neutral-100);
+
+	@include mq(small) {
+		padding: 0em 3vw 2em 3vw;
+	}
+}
+
+.new,
+.featured {
+	background-color: var(--clr-primary-100);
+	color: #fff;
+	padding: 0.35em 0.5em;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	border-radius: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.featured {
+	background-color: var(--clr-primary-200);
+	color: #fff;
+}
+
+.flow > * + * {
+	margin-top: var(--spacing, 1.5em);
+}

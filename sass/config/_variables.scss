@@ -1,0 +1,27 @@
+$colors: (
+	"primary": (
+		100: hsl(180, 29%, 50%),
+		// main
+		200: hsl(180, 14%, 20%),
+	),
+	"neutral": (
+		100: hsl(180, 52%, 96%),
+		// bg
+		200: hsl(180, 31%, 95%),
+		// filter tablets
+		300: hsl(180, 8%, 52%),
+	),
+);
+
+$font-weights: (
+	"normal": 500,
+	"bold": 700,
+);
+
+$fonts-families: (
+	"main": Spartan,
+);
+
+$breakpoints: (
+	"small": 55em,
+);
