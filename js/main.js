@@ -45,7 +45,7 @@ function addToUi(data) {
 		//add data to var
 		jobs += `<li class="job__item" data-filter="${job.role}
 		 ${job.level} ${jobLanguages.join(" ")} ${jobTools.join(" ")}">
-		<img src="${job.logo}" class="job__logo" />
+		<img src="${job.logo}" class="job__logo" alt="logo"/>
 		<div class="job__info">
 			<div class="job__name">
 				<h4 class="job__title">${job.company}</h4>
